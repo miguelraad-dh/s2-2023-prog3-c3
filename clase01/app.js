@@ -83,3 +83,27 @@ function mostrarColores(){
 
 }
 // console.log(colorVerde) // <-- Acá, colorVerde no existe
+
+// Funciones FLECHA
+// En las funciones flecha, si tenemos 1 sola ejecución (a + b) las llaves "{ }" y el "return" están implícitos
+let sumar = (a, b) => a + b; /* <-- Esto, es igual que esto --> */ let sumarConReturn = (a, b) => {return a + b}
+
+// Condicionales
+let condicion = true
+
+// IF
+if(condicion){
+    console.log("Es true")
+}else {
+    console.log("Es false")
+}
+
+let respuesta = condicion ? "Es true (TERNARIO)" :"Es false (TERNARIO)"
+console.log(respuesta)
+
+function verificarNota(nombre, nota){
+    let respuestaDeNota =  nota >= 4 ? `${nombre} aprobó` : `${nombre} desaprobo`
+    return respuestaDeNota
+}
+console.log(verificarNota("Gonzalo", 3))
+
