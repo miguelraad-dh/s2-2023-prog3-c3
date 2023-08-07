@@ -1,0 +1,48 @@
+/* Resets */
+*{
+    box-sizing: border-box;
+}
+ul,ol {
+    padding: 0;
+}
+li {
+    list-style-type:none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+body {
+    font-family: Nunito;
+    margin: 0;
+    background-color: #eee;
+}
+
+/* Navigation */
+
+
+h1,h2 {
+    font-weight: 400;
+}
+
+h1,
+main {
+    padding: 0 30px;
+}
+
+/* Top data */
+
+
+/* Categorías */
+
+
+/* footer */
+footer {
+    background-color: #dedede;
+    text-align: center;
+    padding: 40px 0;
+    color: #666;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
