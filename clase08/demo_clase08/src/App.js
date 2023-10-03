@@ -6,10 +6,13 @@ import Personajes from "./screens/Personajes/Personajes";
 import UnPersonaje from "./screens/UnPersonaje/UnPersonaje";
 import Favorites from "./screens/Favorites/Favorites";
 import NoEncontrada from "./screens/NoEcontrada/NoEncontrada";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <React.Fragment>
+      <Navbar/>
       <Switch>
         <Route path="/" exact={true} component={Home} />
         <Route path="/aboutus" component={AboutUs} />
@@ -18,6 +21,7 @@ function App() {
         <Route path="/favorites" component={Favorites} />
         <Route path="" component={NoEncontrada} />
       </Switch>
+      <Footer/>
     </React.Fragment>
   );
 }
