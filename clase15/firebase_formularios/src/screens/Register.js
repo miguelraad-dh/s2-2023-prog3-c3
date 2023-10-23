@@ -23,10 +23,25 @@ class Register extends Component {
             <View>
                 <Text>Register</Text>
                 <Text>Email: </Text>
-                <TextInput style={styles.input} keyboardType='email-address' placeholder="ejemplo@gmail.com" onChangeText={(text) => this.setState({email: text })} value={this.state.email}/>
+                {/* Los inputs deben quedar identados de esta manera */}
+                <TextInput
+                    style={styles.input}
+                    keyboardType='email-address'
+                    placeholder="ejemplo@gmail.com"
+                    onChangeText={(text) => this.setState({email: text })}
+                    value={this.state.email}
+                    />
                 <Text>Password: </Text>
-                <TextInput style={styles.input} secureTextEntry={true} keyboardType='default' onChangeText={(text) => this.setState({password: text })} value={this.state.password}/>
-                <TouchableOpacity style={styles.buton} onPress={() => this.register(this.state.email, this.state.password)}>
+                <TextInput
+                    style={styles.input}
+                    secureTextEntry={true}
+                    keyboardType='default'
+                    onChangeText={(text) => this.setState({password: text })}
+                    value={this.state.password}
+                    />
+                <TouchableOpacity
+                    style={styles.buton}
+                    onPress={() => this.register(this.state.email, this.state.password)}>
                     <Text style={styles.text}>Register</Text>
                 </TouchableOpacity>
 

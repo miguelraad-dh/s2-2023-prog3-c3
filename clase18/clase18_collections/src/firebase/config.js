@@ -8,10 +8,10 @@ const firebaseConfig = {
     storageBucket: "demo04-clase15.appspot.com",
     messagingSenderId: "36352136342",
     appId: "1:36352136342:web:07b4f54f6649c13e63deb7"
-};
+  };
 
-app.initializeApp(firebaseConfig)
+  app.initializeApp(firebaseConfig)
 
-export const auth = firebase.auth() // auth
-export const storage = app.storage()
-export const db = app.firestore()
+  export const auth = firebase.auth()
+  export const storage = app.storage()
+  export const db = app.firestore()
