@@ -32,7 +32,7 @@ class Post extends Component {
     //El post tendría que guardar una propiedad like con un array de los usuario que lo likearon.
    }
 
-   disLike(){
+   dislike(){
     //Quitar del array de likes al usario que está mirando el post.
    }
    
@@ -45,6 +45,7 @@ class Post extends Component {
                 <Text>Datos del Post</Text>
                 <Text>Email: {this.props.infoPost.datos.owner}</Text>
                 <Text>Texto: {this.props.infoPost.datos.post}</Text>
+                <Text>Cantidad de Likes: {this.props.infoPost.datos.likes.length}</Text>
 
                 {/* If ternario */}
                 {this.state.like ? 
